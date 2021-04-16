@@ -1,4 +1,4 @@
-# Reverse Notation Equation SOlver
+# Reverse Notation Equation Solver
 This is solution for several practical tasks given as a part of the course "Information Systems Architect" by GeekBrains.ru 
   
 The requirement was to create a Console app that will evaluate a Reverse Polish Notation math equation and show calculation result.
