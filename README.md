@@ -3,7 +3,7 @@ This is solution for several practical tasks given as a part of the course "Info
   
 The requirement was to create a Console app that will evaluate a Reverse Polish Notation math equation and show calculation result.
 
-Supported operations: +, -, *, /, (, ), unary +, unary - 
+Supported operations: +, -, *, /, unary +, unary - 
 
 Example:
 
