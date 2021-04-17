@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseNotationEquationSolver.CSharp", "ReverseNotationEquationSolver.CSharp\ReverseNotationEquationSolver.CSharp.csproj", "{E92CB592-BC5A-446C-A374-B4747A17CB6E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ReverseNotationEquationSolver.FSharp", "ReverseNotationEquationSolver.FSharp\ReverseNotationEquationSolver.FSharp.fsproj", "{5F545356-C727-4D81-8AF0-4AD6AF036042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E92CB592-BC5A-446C-A374-B4747A17CB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92CB592-BC5A-446C-A374-B4747A17CB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E92CB592-BC5A-446C-A374-B4747A17CB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92CB592-BC5A-446C-A374-B4747A17CB6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F545356-C727-4D81-8AF0-4AD6AF036042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F545356-C727-4D81-8AF0-4AD6AF036042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F545356-C727-4D81-8AF0-4AD6AF036042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F545356-C727-4D81-8AF0-4AD6AF036042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA5A7E5-2F01-49A0-AF82-5E0DDD5B33C9}
+	EndGlobalSection
+EndGlobal
