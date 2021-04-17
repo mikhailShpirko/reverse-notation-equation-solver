@@ -3,15 +3,15 @@
 open System
 open MathOperations
 
-let operations = ["+"; "-"; "*"; "/"]
+let private operations = ["+"; "-"; "*"; "/"]
 
-let isOperation (equationItem: string) : bool = 
+let private isOperation (equationItem: string) : bool = 
     List.exists(fun operation -> operation = equationItem) operations
 
-let isOperand (equationItem: string) : bool = 
+let private isOperand (equationItem: string) : bool = 
     Decimal.TryParse equationItem |> fst
 
-let getOperation (operation: string) = 
+let private getOperation (operation: string) = 
     if operation = operations.[0] then
         add
     else if operation = operations.[1] then
@@ -21,7 +21,7 @@ let getOperation (operation: string) =
     else
         divide
 
-let rec evaluateList (equation: string list) : string list = 
+let rec private evaluateList (equation: string list) : string list = 
     match List.tryFindIndex isOperation equation with
     | Some value -> 
         if value < 2 then equation
