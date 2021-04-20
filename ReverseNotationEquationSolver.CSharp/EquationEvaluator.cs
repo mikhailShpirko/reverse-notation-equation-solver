@@ -5,14 +5,16 @@ namespace ReverseNotationEquationSolver.CSharp
 {
     //didn't want to create partial class for Program to split code into modules
     //so separate class created
-    public class EquationEvaluator
+    //in F# modules are compiled into static classes
+    //so same here
+    public static class EquationEvaluator
     {
-        private string[] SplitEquationToArray(in string equation)
+        private static string[] SplitEquationToArray(in string equation)
         {
             return equation.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         }
 
-        private EvaluationResult EvaluateEquation(in string[] equationItems, 
+        private static EvaluationResult EvaluateEquation(in string[] equationItems, 
             in Stack<decimal> operandStack,
             in IReadOnlyDictionary<string, Func<decimal, decimal, decimal>> supportedOperations)
         {
@@ -49,7 +51,7 @@ namespace ReverseNotationEquationSolver.CSharp
             return new EvaluationResult(operandStack.Pop());
         }
 
-        public EvaluationResult Evaluate(in string equation)
+        public static EvaluationResult Evaluate(in string equation)
         {
             return EvaluateEquation(SplitEquationToArray(equation),
                 new Stack<decimal>(),

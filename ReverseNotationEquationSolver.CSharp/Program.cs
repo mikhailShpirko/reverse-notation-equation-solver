@@ -13,7 +13,7 @@ namespace ReverseNotationEquationSolver.CSharp
                 Console.WriteLine("Enter Reverse Notation equation");
                 try
                 {
-                    Console.WriteLine(new EquationEvaluator().Evaluate(Console.ReadLine()));
+                    Console.WriteLine(EquationEvaluator.Evaluate(Console.ReadLine()));
                 }
                 catch (Exception e)
                 {
